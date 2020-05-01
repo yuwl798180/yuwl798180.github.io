@@ -35,7 +35,16 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
+        plugins: [   
+          {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: {
+                default: 'Quiet Light',
+                dark: 'Monokai',
+              }
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {

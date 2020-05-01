@@ -7,6 +7,11 @@
 /* Main */
 
 	#main {
+		// Correction
+		pre {
+			background-color: #fff;
+			// padding: 0;
+		}
 		@include color(invert);
 		border-radius: _size(border-radius-main);
 
