@@ -8,7 +8,7 @@ env:
 
 branches:
   only:
-    - travis
+    - deploy
 
 install:
   - npm install
