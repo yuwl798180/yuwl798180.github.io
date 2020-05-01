@@ -8,7 +8,7 @@ class About extends React.Component {
   render() {
     return (
       <Layout>
-        <Seo />
+        <Seo  title="关于 | 海钓的猫" />
         <Header />
         <div id="main">
           <section id="content" className="main">

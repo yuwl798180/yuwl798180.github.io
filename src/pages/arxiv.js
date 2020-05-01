@@ -10,7 +10,7 @@ export default ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
   return (
     <Layout>
-      <Seo title="博客 ｜ 海钓的猫" />
+      <Seo title="博客 | 海钓的猫" />
       <Header />
       <div id="main">
         <section id="content" className="main">

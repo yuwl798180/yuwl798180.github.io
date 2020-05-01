@@ -6,7 +6,7 @@ import Seo from '../components/Seo'
 
 const NotFoundPage = () => (
   <Layout>
-    <Seo title="404: Not found ｜ 海钓的猫" />
+    <Seo title="404: Not found | 海钓的猫" />
     <Header />
     <div id="main">
       <section id="content" className="main">

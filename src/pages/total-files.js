@@ -6,7 +6,7 @@ import Seo from '../components/Seo'
 export default ({ data }) => {
   return (
     <Layout>
-    <Seo  title="files list ｜ 海钓的猫" />
+    <Seo  title="files list | 海钓的猫" />
       <div>
         <h1>My Site's Files</h1>
         <table>
