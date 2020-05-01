@@ -26,7 +26,7 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <Seo title="Home" />
+        <Seo />
         <Header />
         <Waypoint
           onEnter={this._handleWaypointEnter}

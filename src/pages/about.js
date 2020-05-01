@@ -1,14 +1,15 @@
 import React from 'react'
 import Layout from '../components/layout'
-import HeaderGeneric from '../components/Header'
+import Header from '../components/Header'
 import pic04 from '../assets/images/pic04.jpg'
+import Seo from '../components/Seo'
 
-class Generic extends React.Component {
+class About extends React.Component {
   render() {
     return (
       <Layout>
-        {/* <Helmet title="Generic Page Title" /> */}
-        <HeaderGeneric />
+        <Seo />
+        <Header />
         <div id="main">
           <section id="content" className="main">
             <span className="image main">
@@ -42,4 +43,4 @@ class Generic extends React.Component {
   }
 }
 
-export default Generic
+export default About

@@ -2,14 +2,16 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import HeaderGeneric from '../components/Header'
+import Header from '../components/Header'
+import Seo from '../components/Seo'
 import pic04 from '../assets/images/pic04.jpg'
 
 export default ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
   return (
     <Layout>
-      <HeaderGeneric />
+      <Seo title="博客 ｜ 海钓的猫" />
+      <Header />
       <div id="main">
         <section id="content" className="main">
           <span className="image main">
