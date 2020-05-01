@@ -2,7 +2,7 @@
   Gatsby's Blog
 </h1>
 
-[![Build Status](https://travis-ci.org/yuwl798180/yuwl798180.github.io.svg?branch=travis)](https://travis-ci.org/yuwl798180/yuwl798180.github.io)
+[![Build Status](https://travis-ci.org/yuwl798180/yuwl798180.github.io.svg?branch=deploy)](https://travis-ci.org/yuwl798180/yuwl798180.github.io)
 
 
 
