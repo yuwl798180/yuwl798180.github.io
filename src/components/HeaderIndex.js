@@ -1,6 +1,6 @@
-import React from "react"
-import { css } from "@emotion/core"
-import logo from "../assets/images/logo.svg"
+import React from 'react'
+import { css } from '@emotion/core'
+import logo from '../assets/images/logo.svg'
 
 const Header = () => (
   <header id="header" className="alt">

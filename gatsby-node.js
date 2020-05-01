@@ -31,7 +31,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: "/arxiv" + node.fields.slug,
+      path: '/arxiv' + node.fields.slug,
       component: path.resolve(`./src/arxiv/template.js`),
       context: {
         // Data passed to context is available

@@ -1,11 +1,13 @@
-import React from "react"
-import { Link } from "gatsby"
-import Layout from "../components/layout"
-import HeaderGeneric from "../components/Header"
+import React from 'react'
+import { Link } from 'gatsby'
+import Layout from '../components/layout'
+import Header from '../components/Header'
+import Seo from '../components/Seo'
 
 const NotFoundPage = () => (
   <Layout>
-    <HeaderGeneric />
+    <Seo title="404: Not found" />
+    <Header />
     <div id="main">
       <section id="content" className="main">
         <h1>NOT FOUND</h1>

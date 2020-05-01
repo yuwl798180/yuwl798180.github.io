@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import HeaderGeneric from "../components/Header"
-import Seo from "../components/Seo"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../components/layout'
+import HeaderGeneric from '../components/Header'
+import Seo from '../components/Seo'
 
 export default ({ data }) => {
   const post = data.markdownRemark

@@ -1,7 +1,7 @@
-import React from "react"
-import Layout from "../components/layout"
-import HeaderGeneric from "../components/Header"
-import pic04 from "../assets/images/pic04.jpg"
+import React from 'react'
+import Layout from '../components/layout'
+import HeaderGeneric from '../components/Header'
+import pic04 from '../assets/images/pic04.jpg'
 
 class Generic extends React.Component {
   render() {

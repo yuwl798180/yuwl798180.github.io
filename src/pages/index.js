@@ -1,10 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
-import { Waypoint } from "react-waypoint"
-import Header from "../components/HeaderIndex"
-import Layout from "../components/layout"
-import Nav from "../components/Nav"
-import pic01 from "../assets/images/Blog.svg"
+import React from 'react'
+import { Link } from 'gatsby'
+import { Waypoint } from 'react-waypoint'
+import Header from '../components/HeaderIndex'
+import Layout from '../components/layout'
+import Nav from '../components/Nav'
+import Seo from '../components/Seo'
+import pic01 from '../assets/images/Blog.svg'
 
 class Index extends React.Component {
   constructor(props) {
@@ -25,8 +26,8 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
+        <Seo title="Home" />
         <Header />
-
         <Waypoint
           onEnter={this._handleWaypointEnter}
           onLeave={this._handleWaypointLeave}

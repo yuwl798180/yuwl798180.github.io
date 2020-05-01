@@ -1,9 +1,9 @@
-import React from "react"
-import Link from "gatsby-link"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import HeaderGeneric from "../components/Header"
-import pic04 from "../assets/images/pic04.jpg"
+import React from 'react'
+import Link from 'gatsby-link'
+import { graphql } from 'gatsby'
+import Layout from '../components/layout'
+import HeaderGeneric from '../components/Header'
+import pic04 from '../assets/images/pic04.jpg'
 
 export default ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
@@ -17,12 +17,12 @@ export default ({ data }) => {
           </span>
           <div className="blog-posts">
             {posts
-              .filter(post => post.node.frontmatter.title.length > 0)
+              .filter((post) => post.node.frontmatter.title.length > 0)
               .map(({ node: post }) => {
                 return (
                   <div className="blog-post-preview" key={post.id}>
                     <h1>
-                      <Link to={"arxiv" + post.fields.slug}>
+                      <Link to={'arxiv' + post.fields.slug}>
                         {post.frontmatter.title}
                       </Link>
                     </h1>

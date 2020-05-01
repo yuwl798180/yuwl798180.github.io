@@ -35,14 +35,14 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [   
+        plugins: [
           {
             resolve: `gatsby-remark-vscode`,
             options: {
               theme: {
                 default: 'Quiet Light',
                 dark: 'Monokai',
-              }
+              },
             },
           },
           {
@@ -54,10 +54,11 @@ module.exports = {
         ],
       },
     },
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-sass",
+    'gatsby-plugin-sass',
     `gatsby-plugin-emotion`,
   ],
 }

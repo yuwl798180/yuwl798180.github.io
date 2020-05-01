@@ -4,8 +4,6 @@
 
 [![Build Status](https://travis-ci.org/yuwl798180/yuwl798180.github.io.svg?branch=deploy)](https://travis-ci.org/yuwl798180/yuwl798180.github.io)
 
-
-
 ## 🚀 Quick start
 
 1.  **Clone this Gatsby site.**
@@ -69,9 +67,9 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 1.  **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-1. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+1.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-1. **`README.md`**: A text file containing useful reference information about your project.
+1.  **`README.md`**: A text file containing useful reference information about your project.
 
 ## 🎓 Learning Gatsby
 

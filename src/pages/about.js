@@ -1,7 +1,7 @@
-import React from "react"
-import Layout from "../components/layout"
-import HeaderGeneric from "../components/Header"
-import pic04 from "../assets/images/pic04.jpg"
+import React from 'react'
+import Layout from '../components/layout'
+import HeaderGeneric from '../components/Header'
+import pic04 from '../assets/images/pic04.jpg'
 
 class Generic extends React.Component {
   render() {
@@ -16,8 +16,8 @@ class Generic extends React.Component {
             </span>
             <h2>关于博客</h2>
             <p>
-              博客使用 <a href="https://www.gatsbyjs.org/">Gatsby</a>{" "}
-              构建。主题设计参考了{" "}
+              博客使用 <a href="https://www.gatsbyjs.org/">Gatsby</a>{' '}
+              构建。主题设计参考了{' '}
               <a href="https://github.com/codebushi/gatsby-starter-stellar">
                 gatsby-starter-stellar
               </a>
