@@ -1,0 +1,26 @@
+language: node_js
+node_js: stable
+
+env:
+  global:
+    - GH_REF: github.com/yuwl798180/yuwl798180.github.io.git
+    - secure: "JWMLsPn008tZpzSn5C4IJRl9nDXv8WPzlA64rp2bU4LrYhJ/lDJ36TAVky/YJhgxXP2hYbi0ZlNyCj5sHKQ48eRCWA7n3V9teHcqNejpRU7RrCFbNxJ+TWcyWuINdBqZfLANz30TKMCYKRL6arKKr0tYCURSfy+Q/s6/DJawTN3nYT9PwXqF2KKmb3IGV6Pt4YMJXg/kyJChpu0azavgWcg1xB84dpEQQrC+rhF/i/Wzoxfheg2RDLKN1zrHB3wCSaPnRDXHFcifL7VxCice8/TXDYxvf+r+krfR1VYkz71jLhZV2/TOImGYIsRbjgXDBIN4ILlChETcC7fdmWhrzFl33yYvOROAurXc5WQpmv3SyVWFCAXiPKpR3Z75dPwgsolmrlKz7S1Mp9IbhPfEn2POUKH7YdDvxLY7rvbWjHzFfJPqrCPOCFxc7y2oSt497pWeEefNl+/FkNjwGgdV2szVtjZ41i6zoykauy6IivxMHCmMnoxAgnT9sshSMFBtWmoh5B+PfrdfzUwg8L38gbq6ofgxJr8es07zfXeVuOVDZkEEYTqgIMM8KYJtxTxlQr1XVmpv4xj/HW5MdaDRTLLMEjyRPKn31t8XgvDEhwBT5i3hgGQbHfENc8O38gbT5Bd2tWRfewWvxJnWSOSRg4Zdc1aYYUpq9iw3cuavfDI="
+
+branches:
+  only:
+    - travis
+
+install:
+  - npm install
+
+script:
+  - npm run build
+
+after_script:
+  - cd public
+  - git init
+  - git config user.name "yuwl798180"
+  - git config user.email "yuwl798180@163.com"
+  - git add .
+  - git commit -m "update html"
+  - git push -f "https://${GH_TOKEN}@${GH_REF}" master:master
