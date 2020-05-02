@@ -18,7 +18,9 @@
 		> .label {
 			display: none;
 		}
-
+		&.major.home-index {
+			cursor: pointer;
+		}
 		&.major {
 			border: solid 1px;
 			display: inline-block;

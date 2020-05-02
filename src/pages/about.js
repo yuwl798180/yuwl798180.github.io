@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Header from '../components/Header'
-import pic04 from '../assets/images/pic04.jpg'
 import Seo from '../components/Seo'
 
 class About extends React.Component {
@@ -12,9 +11,7 @@ class About extends React.Component {
         <Header />
         <div id="main">
           <section id="content" className="main">
-            <span className="image main">
-              <img src={pic04} alt="" />
-            </span>
+          <div className="image main"></div>
             <h2>关于博客</h2>
             <p>
               博客使用 <a href="https://www.gatsbyjs.org/">Gatsby</a>{' '}

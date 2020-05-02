@@ -67,7 +67,10 @@ class Index extends React.Component {
             </header>
             <ul className="features">
               <li>
-                <span className="icon major style1 fa-code"></span>
+                <Link
+                  to="/arxiv"
+                  className="icon major style1 fa-code home-index"
+                ></Link>
                 <h3>Code Reproduction</h3>
                 <p>
                   Data Structure Implementation
@@ -76,7 +79,10 @@ class Index extends React.Component {
                 </p>
               </li>
               <li>
-                <span className="icon major style3 fa-copy"></span>
+                <Link
+                  to="/arxiv"
+                  className="icon major style3 fa-copy home-index"
+                ></Link>
                 <h3>Knowledge Article</h3>
                 <p>
                   Personal Learning Notebook
@@ -85,7 +91,10 @@ class Index extends React.Component {
                 </p>
               </li>
               <li>
-                <span className="icon major style5 fa-diamond"></span>
+                <Link
+                  to="/arxiv"
+                  className="icon major style5 fa-diamond home-index"
+                ></Link>
                 <h3>Useful Link</h3>
                 <p>
                   Common External Websites
@@ -108,49 +117,37 @@ class Index extends React.Component {
             </header>
             <ul className="statistics">
               <li className="style1">
-                <span className="icon fa-code-fork"></span>
-                <strong>5,120</strong> Etiam
+                <Link to="/arxiv" style={{ borderBottomColor: 'transparent' }}>
+                  <span className="icon fa-book"></span>
+                  <strong>130</strong> NLP
+                </Link>
               </li>
               <li className="style2">
-                <span className="icon fa-folder-open-o"></span>
-                <strong>8,192</strong> Magna
+                <Link to="/arxiv" style={{ borderBottomColor: 'transparent' }}>
+                  <span className="icon fa-leanpub"></span>
+                  <strong>192</strong> NLG
+                </Link>
               </li>
               <li className="style3">
-                <span className="icon fa-signal"></span>
-                <strong>2,048</strong> Tempus
+                <Link to="/arxiv" style={{ borderBottomColor: 'transparent' }}>
+                  <span className="icon fa-globe"></span>
+                  <strong>148</strong> KG
+                </Link>
               </li>
               <li className="style4">
-                <span className="icon fa-laptop"></span>
-                <strong>4,096</strong> Aliquam
+                <Link to="/arxiv" style={{ borderBottomColor: 'transparent' }}>
+                  <span className="icon fa-laptop"></span>
+                  <strong>496</strong> Essay
+                </Link>
               </li>
-              <li className="style5">
-                <span className="icon fa-diamond"></span>
-                <strong>1,024</strong> Nullam
-              </li>
+              {/* <li className="style5">
+                <Link to="/arxiv" style={{ borderBottomColor: 'transparent' }}>
+                  <span className="icon fa-diamond"></span>
+                  <strong>1,024</strong> Nullam
+                </Link>
+              </li> */}
             </ul>
-            <p className="content">
-              Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl
-              eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum
-              ac arcu sit amet, fermentum pellentesque et purus. Integer maximus
-              varius lorem, sed convallis diam accumsan sed. Etiam porttitor
-              placerat sapien, sed eleifend a enim pulvinar faucibus semper quis
-              ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer
-              eget purus nec nulla mattis et accumsan ut magna libero. Morbi
-              auctor iaculis porttitor. Sed ut magna ac risus et hendrerit
-              scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras
-              eu ornare dui curabitur lacinia.
-            </p>
-            <footer className="major">
-              <ul className="actions">
-                <li>
-                  <Link to="/arxiv" className="button">
-                    Learn More
-                  </Link>
-                </li>
-              </ul>
-            </footer>
           </section>
-
           <section id="cta" className="main special">
             <header className="major">
               <h2>Contact Me</h2>
@@ -165,7 +162,7 @@ class Index extends React.Component {
             <footer className="major">
               <ul className="actions">
                 <li>
-                  <Link to="/about" className="button special">
+                  <Link to="/about" className="button">
                     Download Resume
                   </Link>
                 </li>

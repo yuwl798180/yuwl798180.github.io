@@ -86,6 +86,13 @@
 				}
 			}
 
+			&.tag{
+				background-color: _palette($p, border-bg);
+				&:hover {
+					background-color: transparent;
+				}
+			}
+			
 			&.special {
 				background-color: _palette(accent);
 				color: _palette(invert, bg) !important;

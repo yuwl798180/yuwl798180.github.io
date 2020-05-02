@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Header from '../components/Header'
 import Seo from '../components/Seo'
-import pic04 from '../assets/images/pic04.jpg'
 
 export default ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
@@ -14,9 +13,7 @@ export default ({ data }) => {
       <Header />
       <div id="main">
         <section id="content" className="main">
-          <span className="image main">
-            <img src={pic04} alt="" />
-          </span>
+          <div className="image main"></div>
           <div className="blog-posts">
             {posts
               .filter((post) => post.node.frontmatter.title.length > 0)
@@ -29,7 +26,7 @@ export default ({ data }) => {
                       </Link>
                     </h1>
                     <h3>{post.frontmatter.date}</h3>
-                    <p>{post.excerpt}</p>
+                    <p>{post.frontmatter.abstract}</p>
                   </div>
                 )
               })}
@@ -53,6 +50,8 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date(formatString: "YYYY-MMMM-DD")
+            abstract
+            tag
           }
         }
       }
