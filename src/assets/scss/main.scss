@@ -69,3 +69,21 @@
 	@import 'layout/main';
 	@import 'layout/footer';
 	@import 'layout/wrapper';
+
+
+code {
+	padding: 0 0.5em;
+}
+
+.grvsc-container {
+	counter-reset: line;
+}
+
+.grvsc-line::before {
+	counter-increment: line;
+	content: counter(line, decimal-leading-zero);
+	margin-right: 1.5em;
+	margin-left: -2.5em;
+	-webkit-user-select: none;
+	user-select: none;
+}
