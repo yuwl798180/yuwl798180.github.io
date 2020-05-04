@@ -19,7 +19,6 @@ export default ({ data }) => {
         <h1 style={{textAlign:"center",lineHeight:'4em', whiteSpace: "nowrap"}} >{post.frontmatter.title}</h1>
         </div>
           <div>
-            
             <blockquote>{post.frontmatter.abstract}</blockquote>
             <ul className="actions">
               {post.frontmatter.tag.split('，').map((item) => (
